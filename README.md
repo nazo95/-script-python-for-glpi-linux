@@ -34,10 +34,10 @@ $ cd Python-3.8.0
 $ ./configure --enable-optimizations
 ```
 Ensuite on lance ces commandes ( on remplace 1 par le nombre de Cores de son cpu)
-```sh
+```
 $ make -j 1
 $ sudo make altinstall
-
+````
 #### pip3
 ```
 $ sudo apt install python3-pip
