@@ -49,6 +49,7 @@ $ pip3 install pyyaml
 ```
 
 # lancement du script
+  -Le fichier glpi1.py et packages.yaml doivent être dans le même dossier
   - A executer avec l'user qui les droit sudo sans password 
   ```
   -Le fichier glpi1.py et packages.yaml doivent être dans le même dossier
