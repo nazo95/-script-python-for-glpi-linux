@@ -38,17 +38,19 @@ Ensuite on lance ces commandes ( on remplace 1 par le nombre de Cores de son cpu
 $ make -j 1
 $ sudo make altinstall
 
-
+#### pip3
 ```
 $ sudo apt install python3-pip
 ```
 #### yaml
 ```
- pip3 install yaml-1.3
- pip3 install pyyaml
+$ pip3 install yaml-1.3
+$ pip3 install pyyaml
+```
 
 # lancement du script
   - A executer avec l'user qui les droit sudo sans password 
+  ```
   -Le fichier glpi1.py et packages.yaml doivent être dans le même dossier
   
 $ python3 glpi1.py
