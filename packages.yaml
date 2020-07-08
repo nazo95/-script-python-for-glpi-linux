@@ -1,0 +1,38 @@
+#paquet à installer 
+
+lamp:
+  - php7.3
+  - php7.3-zip
+  - php7.3-gd
+  - php7.3-intl
+  - php-pear
+  - php-imagick
+  - php7.3-imap
+  - php-memcache
+  - php7.3-pspell
+  - php7.3-recode
+  - php7.3-tidy
+  - php7.3-xmlrpc
+  - php7.3-xsl
+  - php7.3-mbstring
+  - php-gettext
+  - php7.3-ldap
+  - php-cas
+  - libapache2-mod-php7.3
+  - php7.3-mysql
+  - php-apcu
+  - apache2
+  - mariadb-server
+connexion:
+  ip: 192.168.0.2
+  userdb: glpi
+  pwddb: glpi
+  basedb: glpibase
+  hostname: localhost
+cmd:
+  - sudo service apache2 restart
+  - sudo chmod 755 /var/www/html 
+  - sudo chown www-data:www-data -R /var/www/html/
+glpi:
+  tele: https://github.com/glpi-project/glpi/releases//download/9.4.5/glpi-9.4.5.tgz
+  chemin: /var/www/html 
