@@ -36,7 +36,7 @@ try:
 	os.system(rebootapache)
 except:
 	print("apache n'a pas reboot")
-	sys.exit(1)
+	sys.exit(2)
  
 #Telechargement de glpi
 try:
@@ -44,7 +44,7 @@ try:
 	print("Téléchargement de GLPI effectué")
 except:
 	print("Erreur de téléchargement")
-	sys.exit(1)
+	sys.exit(3)
 
 #Extraction du fichier .tgz vers le dossier apache
 
@@ -52,7 +52,7 @@ try:
 	os.system("sudo tar xvzf /var/tmp/" + lecture["glpi"]["version"] +" -C " + lecture["glpi"]["chemin"])
 except:
 	print("le fichier ne c'est pas extrait correctement")
-	sys.exit(1)
+	sys.exit(4)
 
 
 # modification des droit sur le fichier /var/www/html 
@@ -63,7 +63,7 @@ try:
 	os.system(r)
 except:
 	print("Echec de la modification des droit du fichier html")
-	sys.exit(1)
+	sys.exit(5)
 
 #creation de la base de donnée 
 try:
@@ -72,7 +72,7 @@ try:
 	os.system('sudo mysql -e "grant all privileges on ' + lecture["connexion"]["basedb"] + '.* to \'' + lecture["connexion"]["userdb"] + '\'@\'localhost\'"' )
 except:
 	print("Echec de la création de la base de donnée")
-	sys.exit(1)
+	sys.exit(6)
 
 
 
@@ -82,15 +82,16 @@ try:
 	os.system('sudo php ' + lecture["glpi"]["chemin"] + '/glpi/bin/console db:install -f -n -L fr_FR -H ' + lecture["connexion"]["hostname"] + ' -d ' + lecture["connexion"]["basedb"] + ' -u ' + lecture["connexion"]["userdb"] + ' -p ' + lecture["connexion"]["pwddb"])  
 except:
 	print("Erreur de configuration glpi")
-	sys.exit(1)
+	sys.exit(7)
+	
 print("glpi est correctement installé!")
 
 #suppression du fichier install.php
 try:
 	os.system("sudo rm /var/www/html/glpi/install/install.php")
 except:
-	print("le fichier install ne c'est pas supprimé")
-	sys.exit(1)
+	print("le fichier install n'a pas été supprimé")
+	sys.exit(8)
 
 
 
