@@ -67,7 +67,7 @@ Le script permet d'installer GLPI sur la machine locale il automatise:
  
  
  ### Renvoi d'erreur
- Si le programme renvoi l'erreur:
+ Si le programme renvoie l'erreur:
 - 1: la mise à jour n'a pas été faite
 - 2: les fichiers prérequis ne se sont pas installé
 - 3: Apache n'a pas pu redemmarer 
