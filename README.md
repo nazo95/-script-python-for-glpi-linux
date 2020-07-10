@@ -68,14 +68,15 @@ Le script permet d'installer GLPI sur la machine locale il automatise:
  
  ### Renvoi d'erreur
  Si le programme renvoi l'erreur:
-- 1: La mise à jour n'a pas été faite
-- 2: Apache n'a pas pu redemmarer 
-- 3: glpi n'a pas pu se télécharger
-- 4: l'extraction de glpi n'a pas pu aboutir 
-- 5: les droit n'ont pas pu étre modifier sur le fichier html
-- 6: La base de donné n'a pas été créé
-- 7: la configuration de glpi a echoué 
-- 8: le  fichier install n'a pas été supprimé 
+- 1: la mise à jour n'a pas été faite
+- 2: les fichiers prérequis ne se sont pas installé
+- 3: Apache n'a pas pu redemmarer 
+- 4: glpi n'a pas pu se télécharger
+- 5: l'extraction de glpi n'a pas pu aboutir 
+- 6: les droit n'ont pas pu étre modifier sur le fichier html
+- 7: La base de donné n'a pas été créé
+- 8: la configuration de glpi a echoué 
+- 9: le  fichier install n'a pas été supprimé 
  
  ## Script réalisé dans le cadre d'un projet de parcours de formation sur
  [![N|Solid](https://blog.openclassrooms.com/wp-content/uploads/2018/05/OC.png)](https://openclassrooms.com/)
