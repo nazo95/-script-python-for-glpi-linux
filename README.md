@@ -77,7 +77,7 @@ Le script permet d'installer GLPI sur la machine locale il automatise:
 - 7: la configuration de glpi a echoué 
 - 8: le  fichier install n'a pas été supprimé 
  
- # Script réalisé dans le cadre d'un projet de parcours de formation avec OPENCLASSROOMS
+ # Script réalisé dans le cadre d'un projet de parcours de formation avec Openclassrooms
  
  ### License GNU General Public License v3.0
 Vous pouvez disposer du script librement.
