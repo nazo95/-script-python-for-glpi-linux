@@ -49,7 +49,7 @@ except:
 #Extraction du fichier .tgz vers le dossier apache
 
 try:
-	os.system("sudo tar xvzf /var/tmp/glpi-9.4.5.tgz -C " + lecture["glpi"]["chemin"])
+	os.system("sudo tar xvzf /var/tmp/" + lecture["glpi"]["version"] +" -C " + lecture["glpi"]["chemin"])
 except:
 	print("le fichier ne c'est pas extrait correctement")
 	sys.exit(1)
