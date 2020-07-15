@@ -24,7 +24,6 @@ lamp:
   - apache2
   - mariadb-server
 connexion:
-  ip: 192.168.0.2
   userdb: glpi
   pwddb: glpi
   basedb: glpibase
