@@ -9,7 +9,7 @@ Installation de glpi sur une machine linux via un script python
   
 ### Sudo sans password : 
 - $user = utilisateur avec lequel on va se connecter et éxécuter le script
-éditer le fichier en root:
+- éditer le fichier en root:
 ```
 $ /etc/sudoers 
 ```
