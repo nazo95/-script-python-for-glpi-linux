@@ -78,7 +78,7 @@ except:
 
 #configuration de glpi
 try:
-	os.system("sudo su && cd /var/www/html/glpi")
+	os.system("cd /var/www/html/glpi")
 	os.system('sudo php ' + lecture["glpi"]["chemin"] + '/glpi/bin/console db:install -f -n -L fr_FR -H ' + lecture["connexion"]["hostname"] + ' -d ' + lecture["connexion"]["basedb"] + ' -u ' + lecture["connexion"]["userdb"] + ' -p ' + lecture["connexion"]["pwddb"])  
 except:
 	print("Erreur de configuration glpi")
