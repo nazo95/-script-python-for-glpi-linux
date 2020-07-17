@@ -60,7 +60,7 @@ $ python3 glpi1.py
 ### fonctionnement
 Le script permet d'installer GLPI sur la machine locale il automatise:
  - le télechargement et l'installation d'apache2, mariadb, php7.3 (package.yml)
- - téléchargement de glpi et installation
+ - téléchargement de glpi 
  - création base de donnée 
  - installation silencieuse de glpi
  - Modifier le fichier yaml par rapport a votre configuration
